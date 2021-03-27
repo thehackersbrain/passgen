@@ -59,14 +59,13 @@ void passgen(int passlen) {
 			reset();
 		}
 	}
-	printf("\n");
+	printf("\n\n");
 }
 
 // the main function
 int main(int argc, char *argv[]) {
 
 	char *flag = "-l";
-	char *helpflag = "-h";
 
 	if (argc == 3) {
 		if (strcmp(argv[1], flag) == 0) {
@@ -75,10 +74,6 @@ int main(int argc, char *argv[]) {
 		} else {
 			help(argv[0]);
 			exit(0);
-		}
-	} else if(argc == 2) {
-		if(strcmp(argv[1], helpflag) == 0) {
-			help(argv[0]);
 		}
 	} else{
 		help(argv[0]);
